@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyajyoti</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<!-- Bootstrap icon link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<!-- jQuery Link -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+      .top{
+        position: fixed;
+        float: left;
+        cursor: pointer;
+      }
+
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-section {
+            text-align: center;
+            padding: 50px;
+            background-color: #f5f5f5;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative,fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar-nav {
+            margin-left: auto; /* Push the Manage Account dropdown to the right */
+        }
+
+       
+        .card {
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .row{
+          justify-content: center;
+        }
+        .row1{
+          justify-content: center;
+        }
+        .card {
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+  
+    <header>
+        <h1>Places to visit in Arakalgudu</h1>
+    </header>
+
+    <nav>
+        <a class="navbar-brand me-auto" href="index.html">
+            <img src="./brand_logo/logo2.jfif" height="60px">
+        </a>
+        <a href="touri.html">Back</a>
+        <a href="index.html">Home</a>
+        <a href="arakalagudu.html">All</a>
+        
+        
+        
+        
+    </nav>
+    <!-- MAIN  --> <!-- Carousel -->
+ 
+ <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/hemaimg.jpg" class="d-block w-100" width="700px" height="400px"  alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          
+           
+           <h2 style="background-color: black;"> Gorur Hemavathi Reservoir</h2>
+           
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/ramimg.jpg" class="d-block w-100"  width="700px" height="400px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2  style="background-color: black;">Ramanathapura</h2>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+        <img src="./images/sptaswaraimg.jpg" class="d-block w-100"  width="700px" height="400px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2  style="background-color: black;">Saptaswar Mandir</h2>
+          
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> 
+<hr>
+   <!-- End Carousel -->
+  
+
+ 
+    <!-- CARD CODE STARTS -->
+    
+    <h2 style="font-style: italic;color: RED;" >Saptaswar Mandir</h2>
+    <hr>
+    
+    <!-- Back-To-Top button END -->
+
+     <div class="row">
+    <div class="card">
+        <img src="./images/sptaswara1.jfif" alt="Card Image">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            
+            
+        </div>
+    </div>
+    <br>
+<div class="card">
+    <img src="./images/saptswara2.jpg" alt="Card Image">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        
+        
+    </div>
+</div>
+<br>
+<div class="card">
+    <img src="./images/saptaswara3.jpg"  alt="Card Image">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+        
+       
+    </div>
+</div>
+<br>
+<div class="card">
+    <img src="./images/saptaswara4.jpg" alt="Card Image">
+    <div class="card-body">
+        <h5 class="card-title"></h5>
+       
+    </div>
+</div>
+<br>
+<hr>
+<h3  style="color: black;font-style: italic;">History</h3>
+<hr>
+    <p>Constructed in the form of a tanpura, this temple is a tribute to music worshippers. Opened in 2006, this temple is in the midst of greenery. Inside the temple, the idols of nine renowned devotees of music are installed. They include the idols of Kanakadasa, Vadiraja, Purandaradasa, etc. This temple was the brainchild of music maestro RK Padmanabh, who conceptualized the idea for such a music-centered place of worship, in 2006. A three-day annual Sangeethotsava, a music festival, is hosted here, which is graced by famous musicians. Rudrapatna is itself known as the musical village, popular for its music tradition that is preserved through the generations. The doyens of Karnatak classical music have kept alive not only the music heritage but also taken this village name to international levels.</p>
+      <p><img src="./images/loc.png" alt="">:233W+VQF, shree viroopaksheshwara temple road, Dodda basadi, Hassan, Karnataka</p> 
+      <p><img src="./images/loccc.png" alt="">:Distance (From Hassan bus stop):  60 km </p>
+      <p><img src="./images/trip.png" alt="">:Trip Duration (Including Travel): 1 hour</p>
+      <hr>
+<h2 style="font-style: italic;color: RED;" >Gorur Hemavathi Reservoir</h2>
+    <hr>
+    
+        <div class="row">
+            <div class="card">
+                <img src="./images/goruru4.jpg" alt="Card Image">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    
+                    
+                </div>
+            </div>
+            <br>
+        <div class="card">
+            <img src="./images/goruru1.webp" alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                
+                
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./images/goruru2.jpg"  alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+               
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./images/goruru3.png" alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+               
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h3 style="color: black;font-style: italic;">history</h3>
+        <hr>
+    <p>
+        A dam has been constructed across Hemavati River, an important tributary of the Kaveri. The dam is located at Gorur, near Hassan in Karnataka. Built in 1979, the reservoir has been providing water for drinking and irrigation purposes for the people of Hassan district. Hemavati Dam is very vast and covers a catchment area of 2,810 sq. km. This dam is 4,692 m long and 58.5 m high. The gross storage capacity of this dam is 1,050.63 mcm. The reservoir has six large radial spillway gates.
+        Hemavati dam presents a beautiful look to the visitors, especially during rainy season, when the spillway gates are opened to release the flooding waters that gush out like froth. A garden covered with a green lawn right next to the dam enhances the beauty of the atmosphere as well as the location. The garden is often visited by local people. A visit to the dam in the early hours of the morning is highly gracious, pleasant and inspiring. Various water birds keep flying and diving into the waters. The temples of Sri Paravasudeva and Sri Yoganarasimha are very close to the dam and are popular tourist destinations. The best time to visit Hemavati reservoir is the period between October and March.</p>
+        <p><img src="./images/loc.png" alt="">:Gorur, Hassan, Karnataka 573120, India.</p> 
+        <p><img src="./images/loccc.png" alt="">:Distance (From Hassan):  27 km</p>
+        <p><img src="./images/trip.png" alt="">:Trip Duration (Including Travel): 1 hour</p>
+        
+        <hr>
+       
+        
+        <h2 style="font-style: italic;color: RED;" >Ramanathapura</h2>
+    <hr>
+    
+        <div class="row">
+            <div class="card">
+                <img src="./images/ramanath1.jpg" alt="Card Image">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    
+                    
+                </div>
+            </div>
+            <br>
+        <div class="card">
+            <img src="./images/ramnath2.webp" alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                
+                
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./images/ramnath3.webp"  alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+               
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <img src="./images/ramnath4.webp" alt="Card Image">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+               
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h3 style="color: black;font-style: italic;">history</h3>
+        <hr>
+    <p>
+        Ramanathapura is one of the major hobali town in Arakalgud Taluk of Hassan District. The place is situated on left bank of river cauvery. Ramanathapura is one of the most prominent pilgrimage center in Karnataka. The place is believed as holy place from many centuries and hence called as "DAKSHINA KAASHI". There are many temples in Ramanathapura. Hence Ramanathapura is also termed as "TOWN OF TEMPLES". The important temples of Ramanathapura are Prasanna Sri Subramanya Temple, Sri Rameshwara Temple, Sri Agasteshwara temple, Sri Pattabhi Rama Temple, etc.,
+
+The devotees believes that all their sins will be washed away after having holy bath in river Cauvery and performing rituals at the temple. Every day hundreds of devotees, pilgrims, tourists visits the place for fulfillment of their vows & to get blessings from god through their rituals. Thousands of devotees visits temple during car festival (Rathotsava) in the month of December and January.
+
+Ramanathapura is almost a center place from Hassan, Mysore and Coorg. Ramanathapura is also famous for Bullock & Cow fair, Tobacco Market, Aracanut Market, Educational institutions and agriculture.</p>
+        <p><img src="./images/loc.png" alt="">:Ramanathapura – 573 133. Arakalgud Taluk, Hassan District, Karnataka </p> 
+        <p><img src="./images/loccc.png" alt="">:Distance (From Hassan): 49.7 km </p>
+        <p><img src="./images/trip.png" alt="">:Trip Duration (Including Travel): 1 hr 5 min</p>
+        
+    <!-- this below code is for Back-To-Top button -->
+<div class="top">
+    <div class="position-fixed bottom-0 end-0 mb-3 me-3">
+      <div class="d-inline-flex">
+        <a href="#">
+          <i class="bi bi-arrow-up-circle-fill bg-warning rounded-5 p-2 text-dark" style="font-size: 36px;"></i>
+        </a>
+      </div>
+    </div>
+    </div>
+    <!-- Back-To-Top button END -->
+    
+
+
+    <footer>
+      
+        <p>DivyaJyotiTravels.in © 2024 - All rights reserved, Inc. 
+            · <a href="privacy.html">Privacy</a> 
+           
+            · <a href="Term-condition.html">Terms-condition</a> 
+          
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Add your custom styles if needed -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: powderblue;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        /* SIGNUP STYLE STARTS */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: calc(100% - 28px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .eye-icon {
+            float: right;
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* SIGN UP style ENDS */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DivyaJyoti Travellers</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="brand_logo/logo2.jfif" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+        <!-- MAIN CONTENT STARTS -->
+        
+        <MAIN>
+        <form id="signupForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+            <span class="eye-icon" onclick="togglePasswordVisibility('password')">👁️</span>
+        
+            <label for="conf-password">Confirm Password:</label>
+            <input type="password" id="conf-password" name="conf-password" minlength="6" required>
+            <span class="eye-icon" onclick="togglePasswordVisibility('conf-password')">👁️</span>
+        
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+        </MAIN>
+
+    <!-- MAIN CONTENT ENDS -->
+
+
+        <footer>
+            <p>DivyaJyotitravel.in © 2024 - All rights reserved, Inc. 
+                · <a href="privacy.html">Privacy</a> 
+           
+                · <a href="Term-condition.html">Terms-condition</a> 
+              
+        </footer>
+    
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        function signup() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+    
+            // Simple validation
+            if (email && password.length >= 6) {
+                alert('Sign up successful!\nEmail: ' + email + '\nPassword: ' + password);
+    
+                // Redirect to index.html
+                window.location.href = 'index.html';
+            } else {
+                alert('Please enter a valid email and a password with at least 6 characters.');
+            }
+        }
+    
+        function togglePasswordVisibility(inputId) {
+            var input = document.getElementById(inputId);
+            input.type = (input.type === 'password') ? 'text' : 'password';
+        }
+    </script>
+</body>
+</html> 

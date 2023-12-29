@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.error-message {
+    color: #f00;
+    margin-bottom: 16px;
+}
+
+#bookings-list {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Booking</h1>
+
+        <div id="error-message" class="error-message"></div>
+
+        <form id="booking-form" onsubmit="validateForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <input type="submit" value="Book">
+        </form>
+
+        <div id="bookings-list">
+            <h2>Current Bookings</h2>
+            <ul id="bookings"></ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    displayBookings();
+});
+
+function validateForm(event) {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var destination = document.getElementById('destination').value;
+    var date = document.getElementById('date').value;
+    var errorMessage = document.getElementById('error-message');
+
+    if (!name || !destination || !date) {
+        errorMessage.textContent = 'All fields are required. Please fill them out.';
+    } else {
+        errorMessage.textContent = '';
+        addBooking(name, destination, date);
+        displayBookings();
+        document.getElementById('booking-form').reset();
+    }
+}
+
+function addBooking(name, destination, date) {
+    var bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    var newBooking = { name: name, destination: destination, date: date };
+    bookings.push(newBooking);
+    localStorage.setItem('bookings', JSON.stringify(bookings));
+}
+
+function displayBookings() {
+    var bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    var bookingsList = document.getElementById('bookings');
+
+    bookingsList.innerHTML = '';
+
+    bookings.forEach(function (booking) {
+        var listItem = document.createElement('li');
+        listItem.textContent = `${booking.name} is going to ${booking.destination} on ${booking.date}`;
+
+        bookingsList.appendChild(listItem);
+    });
+}
+
+    </script>
+</body>
+</html>
